@@ -28,7 +28,7 @@
                         <td><?php echo htmlspecialchars($sexo['idsexo']); ?></td>
                         <td><?php echo htmlspecialchars($sexo['nombre']); ?></td>
                         <td>
-    <a href="/microsoft6a/public/sexo/edit?id=<?php echo htmlspecialchars($sexo['id']); ?>">
+    <a href="/microsoft6a/public/sexo/edit?id=<?php echo htmlspecialchars($sexo['idsexo']); ?>">
         <button>Editar</button>
     </a>
     <a href="/microsoft6a/public/sexo/eliminar?id=<?php echo htmlspecialchars($sexo['id']); ?>" 
