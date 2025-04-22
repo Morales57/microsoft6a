@@ -6,7 +6,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 // En SexoController.php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/microfost6a/config/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/microsof6a/config/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/microsoft6a/app/models/Sexo.php';
 
 
