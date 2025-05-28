@@ -107,8 +107,5 @@ class EstadoCivil {
         }
     }
 }
-<<<<<<< HEAD
+
 ?>
-=======
-?>
->>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
