@@ -1,17 +1,16 @@
-<!-- Hola soy la estudiante María Angelica Valencia Baustista -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Sexos</title>
-    <link rel="stylesheet" href="/microsoft6a/public/css/style.css">
+    <title>Listar Sexos</title>
+    <link rel="stylesheet" href="/apple6b/public/css/style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Listado de los  Sexos</h1>
-    <a href="/microsoft6a/app/views/sexo/create.php"><button>Agregar</button></a>
+    <h1>Listar  Sexos</h1>
+    <a href="/apple6b/app/views/sexo/create.php"><button>Agregar</button></a>
 
     <table>
         <thead>
@@ -28,10 +27,10 @@
                         <td><?php echo htmlspecialchars($sexo['idsexo']); ?></td>
                         <td><?php echo htmlspecialchars($sexo['nombre']); ?></td>
                         <td>
-    <a href="/microsoft6a/public/sexo/edit?id=<?php echo htmlspecialchars($sexo['idsexo']); ?>">
+    <a href="/apple6b/public/sexo/edit?idsexo=<?php echo htmlspecialchars($sexo['idsexo']); ?>">
         <button>Editar</button>
     </a>
-    <a href="/microsoft6a/public/sexo/eliminar?id=<?php echo htmlspecialchars($sexo['idsexo']); ?>" 
+    <a href="/apple6b/public/sexo/eliminar?idsexo=<?php echo htmlspecialchars($sexo['idsexo']); ?>" 
        onclick="return confirm('¿Estás seguro de eliminar este registro?');">
         <button>Eliminar</button>
     </a>
@@ -47,6 +46,6 @@
     </table>
 </div>
 
-<script src="/sexo/public/js/script.js"></script>
+<script src="/apple6b/public/js/script.js"></script>
 </body>
 </html>
