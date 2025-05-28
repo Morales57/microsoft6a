@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+PHP
+
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
 <?php
 // Modelo EstadoCivil
 class EstadoCivil {
@@ -11,6 +16,7 @@ class EstadoCivil {
         $this->conn = $db;
     }
 
+<<<<<<< HEAD
 
     public function getAll() {
         // Conexión a la base de datos
@@ -18,6 +24,8 @@ class EstadoCivil {
         return $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
+=======
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
     // Crear un nuevo estado civil
     public function create() {
         try {
@@ -103,4 +111,8 @@ class EstadoCivil {
         }
     }
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf

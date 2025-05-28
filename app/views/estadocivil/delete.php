@@ -8,7 +8,11 @@
 <body>
 
 <h1>Editar el estadocivil</h1>
+<<<<<<< HEAD
 <form action="/apple6b/public/estadocivil/delete" method="POST">
+=======
+<form action="/apple5a/public/estadocivil/delete" method="POST">
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
     <input type="hidden" name="idestadocivil" value="<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>">
     
     <label for="nombre">Nombre:</label>

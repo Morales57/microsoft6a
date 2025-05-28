@@ -3,8 +3,13 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 // En estadocivilController.php
+<<<<<<< HEAD
 require_once $_SERVER['DOCUMENT_ROOT'] . '/microsoft6a/config/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/microsoft6a/app/models/Estadocivil.php';
+=======
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple5a/config/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple5a/app/models/Estadocivil.php';
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
 
 class estadocivilController {
     private $estadocivil;
@@ -43,8 +48,11 @@ class estadocivilController {
         die();  // Detener la ejecución para ver los mensajes
     }
 
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
     public function edit($idestadocivil) {
         // Pasar el ID al modelo antes de llamar a readOne()
         $this->estadocivil->idestadocivil = $idestadocivil;
@@ -94,6 +102,7 @@ class estadocivilController {
     // Eliminar un estado civil
     public function delete() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+<<<<<<< HEAD
             if (isset($_POST['idestadocivil'])) {
                 $this->estadocivil->idestadocivil = $_POST['idestadocivil'];
                 if ($this->estadocivil->delete()) {
@@ -102,6 +111,16 @@ class estadocivilController {
                     exit;
                 } else {
                     header('Location: index?msg=error');
+=======
+            if (isset($_POST['id'])) {
+                $this->estadocivil->idestadocivil = $_POST['id'];
+                if ($this->estadocivil->delete()) {
+                    echo "Estado Civil borrado exitosamente";
+                    header('Location: index.php?msg=deleted');
+                    exit;
+                } else {
+                    header('Location: index.php?msg=error');
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
                     exit;
                 }
             } else {
@@ -112,6 +131,7 @@ class estadocivilController {
         }
         die();  // Detener la ejecución para ver los mensajes
     }
+<<<<<<< HEAD
 
     public function api() {
 
@@ -129,6 +149,10 @@ class estadocivilController {
 
 
 
+=======
+}
+
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
 /// Manejo de la acción en la URL
 if (isset($_GET['action'])) {
     $controller = new estadocivilController();
@@ -154,9 +178,12 @@ if (isset($_GET['action'])) {
         case 'delete':
             $controller->delete();
             break;
+<<<<<<< HEAD
         case 'api':
             $controller->api();
             break;
+=======
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
         default:
             echo "Acción no válida.";
             break;
@@ -165,4 +192,8 @@ if (isset($_GET['action'])) {
    // $controller = new estadocivilController();
    // $controller->index(); // Mostrar la lista por defecto
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
