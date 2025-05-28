@@ -101,8 +101,7 @@ class estadocivilController {
                     header('Location: index?msg=deleted');
                     exit;
                 } else {
-                    header('Location: index?msg=error');
-            if (isset($_POST['id'])) {
+                    header('Location: index?msg=error');    
                 $this->estadocivil->idestadocivil = $_POST['id'];
                 if ($this->estadocivil->delete()) {
                     echo "Estado Civil borrado exitosamente";
