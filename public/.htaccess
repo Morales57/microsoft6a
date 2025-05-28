@@ -1,5 +1,5 @@
-RewriteEngine On
-RewriteBase /apple6b/public/
+microsoft6a On
+RewriteBase /microsoft6a/public/
 
 # Si la solicitud no apunta a un archivo o directorio real, redirigirla a index.php
 RewriteCond %{REQUEST_FILENAME} !-f
