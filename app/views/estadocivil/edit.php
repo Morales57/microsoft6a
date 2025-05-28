@@ -8,11 +8,11 @@
 <body>
 
 <h1>Editar </h1>
-<<<<<<< HEAD
-<form action="/apple6b/public/estadocivil/update" method="POST">
-=======
-<form action="/apple5a/public/estadocivil/update" method="POST">
->>>>>>> c7acd2b8a2b93940a3c5f07e647407719b32c0cf
+
+<form action="/microsoft6a/public/estadocivil/update" method="POST">
+
+<form action="/microsoft6a/public/estadocivil/update" method="POST">
+
     <input type="hidden" name="idestadocivil" value="<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>">
     
     <label for="nombre">Nombre:</label>
