@@ -16,7 +16,6 @@ class EstadoCivil {
         $this->conn = $db;
     }
 
-<<<<<<< HEAD
 
     public function getAll() {
         // Conexión a la base de datos
