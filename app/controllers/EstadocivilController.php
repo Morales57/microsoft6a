@@ -5,8 +5,6 @@ error_reporting(E_ALL);
 // En estadocivilController.php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/microsoft6a/config/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/microsoft6a/app/models/Estadocivil.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/apple5a/config/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/apple5a/app/models/Estadocivil.php';
 
 class estadocivilController {
     private $estadocivil;
@@ -44,6 +42,8 @@ class estadocivilController {
         }
         die();  // Detener la ejecución para ver los mensajes
     }
+
+    
 
     public function edit($idestadocivil) {
         // Pasar el ID al modelo antes de llamar a readOne()
@@ -101,14 +101,7 @@ class estadocivilController {
                     header('Location: index?msg=deleted');
                     exit;
                 } else {
-                    header('Location: index?msg=error');    
-                $this->estadocivil->idestadocivil = $_POST['id'];
-                if ($this->estadocivil->delete()) {
-                    echo "Estado Civil borrado exitosamente";
-                    header('Location: index.php?msg=deleted');
-                    exit;
-                } else {
-                    header('Location: index.php?msg=error');
+                    header('Location: index?msg=error');
                     exit;
                 }
             } else {
@@ -136,7 +129,6 @@ class estadocivilController {
 
 
 
-}
 /// Manejo de la acción en la URL
 if (isset($_GET['action'])) {
     $controller = new estadocivilController();
