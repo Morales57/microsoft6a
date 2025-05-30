@@ -1,5 +1,4 @@
 <?php
-//base de datos configurada stalin francis
 class Database {
     private $host = "localhost";
     private $db_name = "microsoft6a";

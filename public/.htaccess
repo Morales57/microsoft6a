@@ -1,4 +1,4 @@
-microsoft6a On
+RewriteEngine On
 RewriteBase /microsoft6a/public/
 
 # Si la solicitud no apunta a un archivo o directorio real, redirigirla a index.php

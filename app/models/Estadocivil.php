@@ -1,6 +1,4 @@
-
-
-
+PHP
 <?php
 // Modelo EstadoCivil
 class EstadoCivil {
@@ -20,7 +18,6 @@ class EstadoCivil {
         $query = $this->conn->query("SELECT * FROM estadocivil");
         return $query->fetchAll(PDO::FETCH_ASSOC);
     }
-
 
     // Crear un nuevo estado civil
     public function create() {
@@ -107,5 +104,4 @@ class EstadoCivil {
         }
     }
 }
-
 ?>

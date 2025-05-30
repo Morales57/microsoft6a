@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Estados Civiles</title>
-
-    <link rel="stylesheet" href="/microsoft6a/public/css/style.css">
-
     <link rel="stylesheet" href="/microsoft6a/public/css/style.css">
 </head>
 <body>
 
 <div class="container">
     <h1>Listar Estados Civiles</h1>
-    <a href="/microsoft6a/app/views/estadocivil/create.php"><button>Agregar</button></a>
     <a href="/microsoft6a/app/views/estadocivil/create.php"><button>Agregar</button></a>
 
     <table>
@@ -31,17 +27,10 @@
                         <td><?php echo htmlspecialchars($estadocivil['idestadocivil']); ?></td>
                         <td><?php echo htmlspecialchars($estadocivil['nombre']); ?></td>
                         <td>
-
-                            <a href="/microsoft6a/public/estadocivil/edit?idestadocivil=<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>">
-                                <button>Editar</button>
-                            </a>
-                            <a href="/microsoft6a/public/estadocivil/eliminar?idestadocivil=<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>"
-=
                             <a href="/microsoft6a/public/estadocivil/edit?idestadocivil=<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>">
                                 <button>Editar</button>
                             </a>
                             <a href="/microsoft6a/app/views/estadocivil/eliminar?idestadocivil=<?php echo htmlspecialchars($estadocivil['idestadocivil']); ?>"
-
                                onclick="return confirm('¿Estás seguro de eliminar este registro?');">
                                 <button>Eliminar</button>
                             </a>
@@ -56,11 +45,6 @@
         </tbody>
     </table>
 </div>
-
-
-<script src="/microsoft6a/public/js/script.js"></script>
-</body>
-</html>
 
 <script src="/microsoft6a/public/js/script.js"></script>
 </body>

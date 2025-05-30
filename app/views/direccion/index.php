@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-    <h1>Listar  Direccions</h1>
+    <h1>Listar  Direcciones</h1>
     <a href="/microsoft6a/public/direccion/create"><button>Agregar</button></a>
 
     <table>
@@ -26,7 +26,7 @@
                 <?php foreach ($direccions as $direccion): ?>
                     <tr>
                         <td><?php echo htmlspecialchars($direccion['iddireccion']); ?></td>
-                        <td><?php echo htmlspecialchars($direccion['lapersona']); ?></td>
+                        <td><?php echo htmlspecialchars($direccion['persona_nombres']); ?></td>
                         <td><?php echo htmlspecialchars($direccion['nombre']); ?></td>
                         <td>
     <a href="/microsoft6a/public/direccion/edit?iddireccion=<?php echo htmlspecialchars($direccion['iddireccion']); ?>">
